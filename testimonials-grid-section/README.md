@@ -2,7 +2,7 @@
 
 Project files:
 - index.html
-- global.css
+- style.css
 
 [View Live](https://kaffeenj-frontend-mentor.vercel.app/testimonials-grid-section/)
 

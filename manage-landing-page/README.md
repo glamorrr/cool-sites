@@ -2,7 +2,7 @@
 
 Project files:
 - index.html
-- global.css
+- style.css
 - app.js
 
 [View Live](https://kaffeenj-frontend-mentor.vercel.app/manage-landing-page/)
