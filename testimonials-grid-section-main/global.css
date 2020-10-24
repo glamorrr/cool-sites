@@ -1,0 +1,214 @@
+/* CSS Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+	min-height: 100vh;
+}
+/* END CSS Reset */
+
+:root {
+	/* font weight normal --> 500 */
+	/* font weight bold --> 600 */
+	font-size: 16px;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+
+	/* 1. "Verified Graduate" has the same color as the person's name with 50% opacity */
+	/* 2. Review paragraphs inside the quotations have the same color as well, 
+				but are at 70% opacity */
+	--primary-violet: hsl(263, 55%, 52%);
+	--primary-dark-grayish-blue: hsl(217, 19%, 35%);
+	--primary-dark-blackish-blue: hsl(219, 29%, 14%);
+	--primary-white: hsl(0, 0%, 100%);
+
+	--secondary-light-gray: hsl(0, 0%, 81%);
+	--secondary-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+	background-color: var(--secondary-grayish-blue);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrapper {
+	margin: 3rem 1rem;
+	max-width: 75rem;
+}
+
+h1,
+h6,
+p {
+	color: var(--primary-dark-grayish-blue);
+}
+
+p {
+	font-size: 500;
+}
+
+.testimonials {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, auto);
+}
+
+.testimonials--wrapper {
+	border-radius: 1rem;
+	padding: 2rem;
+	margin: 1rem;
+	box-shadow: 0 2.5rem 4rem -3rem var(--primary-dark-grayish-blue);
+}
+
+.testimonials__profile {
+	font-size: 0.9rem;
+	position: relative;
+	padding-bottom: 1.2em;
+	margin-bottom: 0.4em;
+}
+
+.testimonials__profile__picture {
+	position: absolute;
+	border-radius: 50%;
+	border: 0.2em solid var(--secondary-light-gray);
+	width: 3em;
+}
+
+.testimonials__profile__name,
+.testimonials__profile__status {
+	margin-left: 4em;
+}
+
+.testimonials__profile__name {
+	padding-top: 0.3em;
+	font-size: 0.9em;
+}
+
+.testimonials__profile__status {
+	opacity: 0.5;
+	font-size: 0.9em;
+	margin-top: 0.1em;
+}
+
+.testimonials__short-review {
+	line-height: 1.6rem;
+	font-weight: 600;
+	font-size: 1.28rem;
+	margin-bottom: 1.1rem;
+}
+
+.testimonials__long-review {
+	opacity: 0.7;
+	line-height: 1.2rem;
+	font-size: 0.8rem;
+}
+
+.testimonials__1 {
+	background-color: var(--primary-violet);
+	background-image: url(images/bg-pattern-quotation.svg);
+	background-repeat: no-repeat;
+	background-position: 85% 0%;
+	color: var(--white);
+}
+
+.testimonials__1 h1,
+.testimonials__1 p,
+.testimonials__1 h6 {
+	color: var(--primary-white);
+}
+
+.testimonials__2 {
+	background-color: var(--primary-dark-grayish-blue);
+}
+.testimonials__2 h1,
+.testimonials__2 p,
+.testimonials__2 h6 {
+	color: var(--primary-white);
+}
+
+.testimonials__3 {
+	background-color: var(--primary-white);
+}
+.testimonials__3 h1,
+.testimonials__3 p,
+.testimonials__3 h6 {
+	color: var(--primary-dark-grayish-blue);
+}
+.testimonials__3 .testimonials__profile__picture {
+	border: none;
+}
+
+.testimonials__4 {
+	background-color: var(--primary-dark-blackish-blue);
+}
+.testimonials__4 h1,
+.testimonials__4 p,
+.testimonials__4 h6 {
+	color: var(--primary-white);
+}
+.testimonials__4 .testimonials__profile__picture {
+	border-color: var(--primary-violet);
+}
+
+.testimonials__5 {
+	background-color: var(--primary-white);
+}
+.testimonials__5 h1,
+.testimonials__5 p,
+.testimonials__5 h6 {
+	color: var(--primary-dark-grayish-blue);
+}
+.testimonials__5 .testimonials__profile__picture {
+	border: none;
+}
+
+@media screen and (min-width: 1024px) {
+	:root {
+		font-size: 14px;
+	}
+	.testimonials {
+		grid-template-rows: repeat(2, minmax(0fr, 1fr));
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas: "testimonials-1 testimonials-1 testimonials-2 testimonials-5"
+			"testimonials-3 testimonials-4 testimonials-4 testimonials-5";
+	}
+
+	.testimonials__1 {
+		grid-area: testimonials-1;
+	}
+
+	.testimonials__2 {
+		grid-area: testimonials-2;
+	}
+
+	.testimonials__3 {
+		grid-area: testimonials-3;
+	}
+
+	.testimonials__4 {
+		grid-area: testimonials-4;
+	}
+
+	.testimonials__5 {
+		grid-area: testimonials-5;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	:root {
+		font-size: 16px;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	:root {
+		font-size: 20px;
+	}
+}
