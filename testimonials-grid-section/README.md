@@ -4,5 +4,5 @@ Project files:
 - index.html
 - global.css
 
-[View Live](https://kaffeenj-frontend-mentor-manage-landing-page.vercel.app/)
+[View Live](https://kaffeenj-frontend-mentor.vercel.app/testimonials-grid-section/)
 

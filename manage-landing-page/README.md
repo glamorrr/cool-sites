@@ -5,4 +5,4 @@ Project files:
 - global.css
 - app.js
 
-[View Live](https://kaffeenj-frontend-mentor-manage-landing-page.vercel.app/)
+[View Live](https://kaffeenj-frontend-mentor.vercel.app/manage-landing-page/)
