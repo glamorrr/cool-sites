@@ -1,5 +1,4 @@
 {
-  "cleanUrls": true,
 	"routes": [
     { "src": "/manage-landing-page", "dest": "manage-landing-page/index.html" },
     { "src": "/testimonials-grid-section", "dest": "testimonials-grid-section/index.html" }
