@@ -368,7 +368,7 @@ p {
 	font-weight: 400;
 }
 
-[data-form-not-valid="true"] .foo .footer__not-valid-message {
+[data-form-not-valid="true"] .footer .footer__not-valid-message {
 	display: none;
 }
 
