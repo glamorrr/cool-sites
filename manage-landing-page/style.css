@@ -368,10 +368,6 @@ p {
 	font-weight: 400;
 }
 
-[data-form-not-valid="true"] .footer .footer__not-valid-message {
-	display: none;
-}
-
 .footer__form__email-input {
 	margin-right: 0.8rem;
 	border-radius: 30px;
