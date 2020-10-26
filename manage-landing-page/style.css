@@ -182,6 +182,7 @@ p {
 }
 
 .content-wrapper {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
 }
