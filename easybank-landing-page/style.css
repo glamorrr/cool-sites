@@ -430,6 +430,10 @@ body[data-scroll-lock="true"] {
 	margin: 0.5rem 0 2.5rem 0;
 }
 
+.page-footer__copyright a {
+	color: var(--primary-lime-green);
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 400px) {
@@ -738,6 +742,10 @@ body[data-scroll-lock="true"] {
 
 	.page-footer__link-list li a:hover {
 		color: var(--primary-lime-green);
+	}
+
+	.page-footer__copyright a:hover {
+		text-decoration: underline;
 	}
 }
 

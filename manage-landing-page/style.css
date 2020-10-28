@@ -428,13 +428,21 @@ p {
 	grid-area: logo;
 }
 
-p.footer__copyright {
+.footer__copyright {
 	grid-area: copyright;
 	font-size: 0.9rem;
 	opacity: 0.9;
 	justify-self: end;
 	align-self: end;
 	font-weight: 400;
+}
+
+.footer__copyright a {
+	color: var(--secondary-pale-red);
+}
+
+.footer__copyright a:hover {
+	text-decoration: underline;
 }
 
 @media screen and (max-width: 1100px) {
@@ -774,8 +782,12 @@ p.footer__copyright {
 		width: 12rem;
 	}
 
-	p.footer__copyright {
+	.footer__copyright {
 		justify-self: center;
 		align-self: center;
+	}
+
+	.footer__copyright a:hover {
+		text-decoration: none;
 	}
 }
