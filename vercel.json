@@ -2,6 +2,7 @@
 	"routes": [
     { "src": "/manage-landing-page", "dest": "/manage-landing-page/index.html" },
     { "src": "/testimonials-grid-section", "dest": "/testimonials-grid-section/index.html" },
-    { "src": "/easybank-landing-page", "dest": "/easybank-landing-page/index.html" }
+    { "src": "/easybank-landing-page", "dest": "/easybank-landing-page/index.html" },
+    { "src": "/social-proof-section", "dest": "/social-proof-section/index.html" }
   ]
 }
