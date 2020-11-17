@@ -14,7 +14,7 @@
 a[href^='tel'] {
   color: inherit;
   font-size: inherit;
-  font-family: inherit;
+  font-family: 'Open Sans', sans-serif;
   text-decoration: none;
 }
 
@@ -52,7 +52,8 @@ h6 {
 
 p,
 a,
-button {
+button,
+span {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.95rem;
 }
@@ -376,6 +377,7 @@ body {
 
 .pageFooter__contacts-1 li img {
   margin-right: var(--spacing-4);
+  width: var(--spacing-5);
 }
 
 .pageFooter__contacts-2 {
