@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="/huddle-landing-page/images/favicon-32x32.png">
+
+	<title>Frontend Mentor | Huddle landing page</title>
+
+	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="/huddle-landing-page/style.css">
+</head>
+
+<body>
+	<header class="wrapper pageHeader">
+		<img class="pageHeader__logo" src="/huddle-landing-page/images/logo.svg" alt="Huddle Logo">
+		<button class="btn--small" type="button">Try It Free</button>
+	</header>
+
+	<main>
+		<section class="wrapper hero">
+			<h1 class="hero__heading">Build The Community Your Fans Will Love</h1>
+			<p class="hero__paragraph">Huddle re-imagines the way we build communities. You have a voice, but so does your
+				audience. Create connections with your users as you engage in genuine discussion.</p>
+			<button class="hero__btnCta btn--large" type="button">Get Started For Free</button>
+			<img class="hero__image" src="/huddle-landing-page/images/screen-mockups.svg" alt="Mockup Image">
+
+			<div class="record">
+				<article class="record__card">
+					<h2 class="record__name">Communities Formed</h2>
+					<img class="record__icon record__icon--large" src="/huddle-landing-page/images/icon-communities.svg"
+						alt="Community Icon">
+					<p class="record__number">1.4k+</p>
+				</article>
+
+				<article class="record__card">
+					<h2 class="record__name">Messages Sent</h2>
+					<img class="record__icon" src="/huddle-landing-page/images/icon-messages.svg" alt="Message Icon">
+					<p class="record__number">2.7m+</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="content">
+
+			<div class="bgPattern content__bgPatternTop-1"></div>
+			<article class="content__article">
+				<div class="wrapper content__article--wrapper">
+					<header class="content__info">
+						<h2 class="content__heading">Grow Together</h2>
+						<p class="content__paragraph">Generate meaningful discussions with your audience and build a strong, loyal
+							community.
+							Think of the insightful conversations you miss out on with a feedback form.</p>
+					</header>
+					<img class="content__image" src="/huddle-landing-page/images/illustration-grow-together.svg"
+						alt="Illustration Image">
+				</div>
+			</article>
+			<div class="bgPattern content__bgPatternBottom-1"></div>
+
+			<article class="content__article content__article--odd">
+				<div class="wrapper content__article--wrapper content__article--flippedLayout">
+					<header class="content__info">
+						<h2 class="content__heading">Flowing Conversations</h2>
+						<p class="content__paragraph">You wouldn't paginate a conversation in real life, so why do it online? Our
+							threads have
+							just-in-time loading for a more natural flow.</p>
+					</header>
+					<img class="content__image" src="/huddle-landing-page/images/illustration-flowing-conversation.svg"
+						alt="Illustration Image">
+				</div>
+			</article>
+
+			<div class="bgPattern content__bgPatternTop-2"></div>
+			<article class="content__article">
+				<div class="wrapper content__article--wrapper">
+					<header class="content__info">
+						<h2 class="content__heading">Your Users</h2>
+						<p class="content__paragraph">It takes no time at all to integrate Huddle with your app's authentication
+							solution. This means,
+							once signed in to your app, your users can start chatting immediately.</p>
+					</header>
+					<img class="content__image" src="/huddle-landing-page/images/illustration-your-users.svg"
+						alt="Illustration Image">
+				</div>
+			</article>
+			<div class="bgPattern content__bgPatternBottom-2"></div>
+		</section>
+
+		<section class="wrapper cta">
+			<h2 class="cta__heading">Ready To Build Your Community?</h2>
+			<button class="btn--large" type="button">Get Started For Free</button>
+		</section>
+	</main>
+
+	<div class="bgPattern pageFooter__bgPatternTop"></div>
+	<footer class="pageFooter">
+		<div class="wrapper pageFooter--wrapper">
+			<div class="pageFooter__group">
+				<h2 class="pageFooter__heading">NEWSLETTER</h2>
+				<p class="pageFooter__paragraph">To receive tips on how to grow your community, sign up to our weekly
+					newsletter.
+					We’ll never
+					send you spam or pass on your email address</p>
+
+				<form class="pageFooter__form">
+					<input class="pageFooter__input" type="text" name="email" aria-label="email">
+					<p class="pageFooter__input--errorInfo">Check your email please</p>
+					<button class="pageFooter__btnSubmit" type="submit">Subscribe</button>
+				</form>
+			</div>
+
+			<div class="pageFooter__group">
+				<img class="pageFooter__logo" src="/huddle-landing-page/images/logo-footer.svg" alt="Huddle Logo">
+
+				<p class="pageFooter__paragraph">Design by <a href="https://www.frontendmentor.io/" target="_blank"
+						class="designLink">Frontend Mentor</a></p>
+
+				<ul class="pageFooter__contacts-1">
+					<li><img src="/huddle-landing-page/images/icon-phone.svg" alt="phone icon"><span>Phone: +1-543-123-4567</span>
+					</li>
+					<li><img src="/huddle-landing-page/images/icon-email.svg" alt="email icon"><span>example@huddle.com
+					</li>
+				</ul>
+
+				<ul class="pageFooter__contacts-2">
+					<li><a href="#">
+							<ion-icon name="logo-facebook"></ion-icon>
+						</a></li>
+					<li><a href="#">
+							<ion-icon name="logo-instagram"></ion-icon>
+						</a></li>
+					<li><a href="#">
+							<ion-icon name="logo-twitter"></ion-icon>
+						</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+	<script src="/huddle-landing-page/app.js"></script>
+</body>
+
+</html>
