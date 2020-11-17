@@ -563,6 +563,14 @@ body {
     max-width: 360px;
   }
 
+  .pageFooter__contacts-2 li a ion-icon {
+    transition: color 200ms ease-in-out;
+  }
+
+  .pageFooter__contacts-2 li:hover a ion-icon {
+    color: var(--primary-pink);
+  }
+
   .pageFooter__form {
     flex-direction: row;
     width: 512px;
