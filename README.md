@@ -1,3 +1,5 @@
-# Frontend Mentor Challenge Solutions
+# glamorrr
 
-[Visit Challenges](https://www.frontendmentor.io/challenges)
+Design by:
+
+- [Frontend Mentor](https://www.frontendmentor.io/)

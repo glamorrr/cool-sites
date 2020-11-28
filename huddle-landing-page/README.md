@@ -1,4 +1,4 @@
-# Frontend Mentor - Huddle landing page 👋
+# Frontend Mentor - Huddle landing page
 
 Project files:
 
@@ -6,4 +6,4 @@ Project files:
 - style.css
 - app.js
 
-[View Live](https://kaffeenj-frontend-mentor.vercel.app/huddle-landing-page)
+[View Live](https://glamorrr.vercel.app/huddle-landing-page)

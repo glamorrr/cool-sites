@@ -1,8 +1,9 @@
-# Frontend Mentor - Manage landing page 👋
+# Frontend Mentor - Manage landing page
 
 Project files:
+
 - index.html
 - style.css
 - app.js
 
-[View Live](https://kaffeenj-frontend-mentor.vercel.app/manage-landing-page)
+[View Live](https://glamorr.vercel.app/manage-landing-page)

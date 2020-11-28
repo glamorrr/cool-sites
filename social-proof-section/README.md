@@ -1,8 +1,8 @@
-# Frontend Mentor - Social proof section 👋
+# Frontend Mentor - Social proof section
 
 Project files:
 
 - index.html
 - style.css
 
-[View Live](https://kaffeenj-frontend-mentor.vercel.app/social-proof-section)
+[View Live](https://glamorrr.vercel.app/social-proof-section)
