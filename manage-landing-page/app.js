@@ -51,7 +51,7 @@ const mobileMedia = 800;
 })();
 
 // Nav mobile toggler
-if (window.outerWidth <= mobileMedia) {
+if (window.innerWidth <= mobileMedia) {
 	(() => {
 		const nav = document.querySelector('[data-js=nav]');
 		const navToggler = document.querySelector('[data-js=nav-toggler]');
