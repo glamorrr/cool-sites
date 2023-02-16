@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --font-monserrat: 'Montserrat', sans-serif;
+        --font-fraunces: 'Fraunces', serif;
+        --font-normal: 500;
+        --font-bold: 700;
+
+        --dark-cyan: hsl(158, 36%, 37%);
+        --cream: hsl(30, 38%, 92%);
+        --very-dark-blue: hsl(212, 21%, 14%);
+        --dark-grayish-blue: hsl(228, 12%, 48%);
+        --white: hsl(0, 0%, 100%);
+
+        font-size: 16px;
+        font-family: var(--font-monserrat);
+        color: var(--dark-grayish-blue);
+      }
+
+      body {
+        background: var(--cream);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .product {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        max-width: 320px;
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+      }
+
+      .product__img {
+        object-fit: cover;
+        width: 320px;
+        height: 250px;
+      }
+
+      .product__detail {
+        padding: 2rem;
+      }
+
+      .product__tag {
+        font-size: 14px;
+        letter-spacing: 6px;
+      }
+
+      .product__title {
+        font-weight: var(--font-bold);
+        margin-top: 1rem;
+        font-size: 32px;
+        font-family: var(--font-fraunces);
+        color: var(--very-dark-blue);
+        line-height: 1;
+      }
+
+      .product__info {
+        font-size: 14px;
+        margin-top: 1.5rem;
+        line-height: 1.5;
+      }
+
+      .product__price {
+        margin-top: 1.5rem;
+        display: flex;
+        align-items: center;
+      }
+
+      .product__discount-price {
+        font-family: var(--font-fraunces);
+        font-size: 32px;
+        color: var(--dark-cyan);
+        font-weight: var(--font-bold);
+      }
+
+      .product__real-price {
+        margin-left: 1.25rem;
+        text-decoration: line-through;
+        font-size: 13px;
+      }
+
+      .product__cta {
+        margin-top: 2rem;
+        width: 100%;
+        padding: 1rem 2rem 1rem 2rem;
+        color: var(--white);
+        background: var(--dark-cyan);
+        border: none;
+        display: flex;
+        font-weight: bold;
+        justify-content: center;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 200ms;
+        animation: headShake;
+        animation-duration: 1s;
+      }
+
+      .product__cta:hover {
+        background: hsl(158, 36%, 30%);
+      }
+
+      .product__cta-icon {
+        margin-right: 0.5rem;
+      }
+
+      @media only screen and (min-width: 600px) {
+        body {
+          height: 100vh;
+        }
+
+        .product {
+          display: flex;
+          max-width: 600px;
+        }
+
+        .product__img {
+          width: 300px;
+          height: 450px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="product">
+      <img class="product__img" src="images/image-product-desktop.jpg" alt="perfume" />
+      <div class="product__detail">
+        <span class="product__tag">PERFUME</span>
+        <h1 class="product__title">Gabrielle Essence Eau De Parfum</h1>
+        <p class="product__info">
+          A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator
+          for the House of CHANEL.
+        </p>
+        <div class="product__price">
+          <span class="product__discount-price">$149.99</span
+          ><span class="product__real-price">$169.99</span>
+        </div>
+        <button class="product__cta">
+          <svg class="product__cta-icon" width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z"
+              fill="#FFF"
+            />
+          </svg>
+          Add to Cart
+        </button>
+      </div>
+    </section>
+  </body>
+</html>

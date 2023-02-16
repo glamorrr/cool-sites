@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Notifications page</title>
+
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 16px;
+
+        --font-normal: 500;
+        --font-bold: 800;
+
+        --red: hsl(1, 90%, 64%);
+        --blue: hsl(219, 85%, 26%);
+        --white: hsl(0, 0%, 100%);
+        --light-grayish-blue-1: hsl(210, 60%, 98%);
+        --light-grayish-blue-2: hsl(211, 68%, 94%);
+        --light-grayish-blue-3: hsl(205, 33%, 90%);
+        --grayish-blue: hsl(219, 14%, 63%);
+        --dark-grayish-blue: hsl(219, 12%, 42%);
+        --dark-blue: hsl(224, 21%, 14%);
+      }
+
+      button {
+        color: var(--grayish-blue);
+        cursor: pointer;
+      }
+
+      body {
+        background: var(--light-grayish-blue-1);
+      }
+
+      .notification {
+        padding: 2rem;
+        max-width: 720px;
+        background: var(--white);
+      }
+
+      .notification__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .notification__header-left {
+        display: flex;
+        align-items: center;
+      }
+
+      .notification__count {
+        margin-left: 1rem;
+        color: var(--white);
+        background: var(--blue);
+        padding: 0.25rem 0.7rem 0.25rem 0.7rem;
+        font-weight: bold;
+        border-radius: 6px;
+      }
+
+      .notification__mark-button {
+        border: none;
+        background: none;
+        font-size: 0.9rem;
+        margin-left: 1rem;
+        text-align: left;
+      }
+
+      .notification__mark-button:hover {
+        color: var(--blue);
+      }
+
+      .notification__list {
+        margin-top: 2rem;
+        display: grid;
+        gap: 0.5rem;
+      }
+
+      .notification__item {
+        display: flex;
+        padding: 1rem;
+        border-radius: 6px;
+        border: 1px solid transparent;
+      }
+
+      .notification__item-img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .notification__item-text {
+        margin-left: 1rem;
+      }
+
+      .notification__item-content {
+        color: var(--dark-grayish-blue);
+      }
+
+      .notification__person-name {
+        color: var(--dark-blue);
+        font-weight: var(--font-bold);
+        margin-right: 0.3rem;
+      }
+
+      .notification__item-link {
+        font-weight: bold;
+        margin-left: 0.25rem;
+        text-decoration: none;
+        color: var(--dark-grayish-blue);
+      }
+
+      .notification__item-link:hover {
+        color: var(--blue);
+      }
+
+      .notification__item-msg {
+        display: block;
+        text-decoration: none;
+        color: var(--dark-grayish-blue);
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 6px;
+        border: 1px solid var(--light-grayish-blue-3);
+      }
+
+      .notification__item-msg:hover {
+        background-color: var(--light-grayish-blue-2);
+      }
+
+      .notification__item-time {
+        color: var(--grayish-blue);
+        font-size: 0.9rem;
+        margin-top: 0.25rem;
+      }
+
+      .notification__item--unread.notification__item {
+        border-color: var(--light-grayish-blue-2);
+        background: var(--light-grayish-blue-1);
+      }
+
+      .notification__item--unread .notification__unread-icon {
+        display: inline-block;
+        margin-left: 0.25rem;
+        background: var(--red);
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+      }
+
+      .notification__item-content-img {
+        margin-left: 1rem;
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      @media only screen and (min-width: 600px) {
+        .notification {
+          margin: 4rem auto 6rem auto;
+          border: 1px solid var(--light-grayish-blue-3);
+          border-radius: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="notification">
+      <header class="notification__header">
+        <div class="notification__header-left">
+          <h2 class="notification__title">Notifications</h2>
+          <span class="notification__count">3</span>
+        </div>
+        <button class="notification__mark-button">Mark all as read</button>
+      </header>
+      <div class="notification__list">
+        <div class="notification__item notification__item--unread">
+          <img
+            width="40px"
+            height="40px"
+            class="notification__item-img"
+            src="assets/images/avatar-mark-webber.webp"
+            alt="mark webber profile picture"
+          />
+          <div class="notification__item-text">
+            <p class="notification__item-content">
+              <span class="notification__person-name">Mark Webber</span>reacted to your recent post
+              <a class="notification__item-link" href="#">My first tournament today!</a>
+              <span class="notification__unread-icon"></span>
+            </p>
+            <p class="notification__item-time">1m ago</p>
+          </div>
+        </div>
+
+        <div class="notification__item notification__item--unread">
+          <img
+            width="40px"
+            height="40px"
+            class="notification__item-img"
+            src="assets/images/avatar-angela-gray.webp"
+            alt="angela gray profile picture"
+          />
+          <div class="notification__item-text">
+            <p class="notification__item-content">
+              <span class="notification__person-name">Angela Gray</span>followed you
+              <span class="notification__unread-icon"></span>
+            </p>
+            <p class="notification__item-time">5m ago</p>
+          </div>
+        </div>
+
+        <div class="notification__item notification__item--unread">
+          <img
+            width="40px"
+            height="40px"
+            class="notification__item-img"
+            src="assets/images/avatar-jacob-thompson.webp"
+            alt="jacob thompson profile picture"
+          />
+          <div class="notification__item-text">
+            <p class="notification__item-content">
+              <span class="notification__person-name">Jacob Thompson</span>has joined your group
+              <a class="notification__item-link" href="#">Chess Club</a>
+
+              <span class="notification__unread-icon"></span>
+            </p>
+            <p class="notification__item-time">1 day ago</p>
+          </div>
+        </div>
+
+        <div class="notification__item">
+          <img
+            width="40px"
+            height="40px"
+            class="notification__item-img"
+            src="assets/images/avatar-rizky-hasanuddin.webp"
+            alt="rizki hasanudin profile picture"
+          />
+          <div class="notification__item-text">
+            <p class="notification__item-content">
+              <span class="notification__person-name">Rizky Hasanuddin</span>sent you a private
+              message
+            </p>
+            <p class="notification__item-time">5 days ago</p>
+            <a href="#" class="notification__item-msg">
+              Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now
+              and I'm already having lots of fun and improving my game.
+            </a>
+          </div>
+        </div>
+
+        <div class="notification__item">
+          <img
+            width="40px"
+            height="40px"
+            class="notification__item-img"
+            src="assets/images/avatar-kimberly-smith.webp"
+            alt="kimberly smith profile picture"
+          />
+          <div class="notification__item-text">
+            <p class="notification__item-content">
+              <span class="notification__person-name">Kimberly Smith</span>commented on your picture
+            </p>
+            <p class="notification__item-time">1 week ago</p>
+          </div>
+          <div class="notification__item-content-img">
+            <img width="40px" height="40px" src="assets/images/image-chess.webp" alt="chess" />
+          </div>
+        </div>
+
+        <div class="notification__item">
+          <img
+            width="40px"
+            height="40px"
+            class="notification__item-img"
+            src="assets/images/avatar-nathan-peterson.webp"
+            alt="nathan peterson profile picture"
+          />
+          <div class="notification__item-text">
+            <p class="notification__item-content">
+              <span class="notification__person-name">Mark Webber</span>reacted to your recent post
+              <a class="notification__item-link" href="#">
+                5 end-game strategies to increase your win rate</a
+              >
+            </p>
+            <p class="notification__item-time">2 weeks ago</p>
+          </div>
+        </div>
+
+        <div class="notification__item">
+          <img
+            width="40px"
+            height="40px"
+            class="notification__item-img"
+            src="assets/images/avatar-anna-kim.webp"
+            alt="anna kim profile picture"
+          />
+          <div class="notification__item-text">
+            <p class="notification__item-content">
+              <span class="notification__person-name">Anna Kim</span>left the group
+              <a class="notification__item-link" href="#"> Chess Club</a>
+            </p>
+            <p class="notification__item-time">2 weeks ago</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const button = document.querySelector('.notification__mark-button');
+      const count = document.querySelector('.notification__count');
+      button.addEventListener('click', () => {
+        document.querySelectorAll('.notification__item--unread').forEach((el) => {
+          el.classList.remove('notification__item--unread');
+          count.textContent = 0;
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -4,6 +4,9 @@
     { "src": "/testimonials-grid-section", "dest": "/testimonials-grid-section/index.html" },
     { "src": "/easybank-landing-page", "dest": "/easybank-landing-page/index.html" },
     { "src": "/social-proof-section", "dest": "/social-proof-section/index.html" },
-    { "src": "/huddle-landing-page", "dest": "/huddle-landing-page/index.html" }
+    { "src": "/huddle-landing-page", "dest": "/huddle-landing-page/index.html" },
+    { "src": "/notification-page", "dest": "/notification-page/index.html" },
+    { "src": "/qr-code-component", "dest": "/hqr-code-component/index.html" },
+    { "src": "/product-preview-card-component", "dest": "/product-preview-card-component/index.html" }
   ]
 }
